@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>today image</title>
+<script language = "javascript">
+	var imgArray = new Array();
+	imgArray[0] = "/Users/jean/Desktop/image/1.jpeg";
+	imgArray[1] = "/Users/jean/Desktop/image/2.jpeg";
+	imgArray[2] = "/Users/jean/Desktop/image/3.jpeg";
+	imgArray[3] = "/Users/jean/Desktop/image/4.jpeg";
+	imgArray[4] = "/Users/jean/Desktop/image/5.jpeg";
+	imgArray[5] = "/Users/jean/Desktop/image/6.jpeg";
+	imgArray[6] = "/Users/jean/Desktop/image/7.jpeg";
+	imgArray[7] = "/Users/jean/Desktop/image/8.jpeg";
+	imgArray[8] = "/Users/jean/Desktop/image/9.jpeg";
+
+	
+	function showImage(){
+		var imgNum = Math.floor(Math.random() * 9);
+		var objImg = document.getElementById("introImg");
+		objImg.src = imgArray[imgNum];
+	}
+</script>
+</head>
+<body onload = "showImage()">
+	<img id = "introImg" border="0">
+</body>
+</html>
